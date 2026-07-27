@@ -67,6 +67,7 @@ body{
     border-radius: var(--space-150);
     text-align: center;
     gap: var(--space-300);
+    position: relative;
 }    
 
 .card-picture img{
@@ -103,11 +104,35 @@ body{
     line-height: 1.5;
     color: var(--color-white);
 }
+
+.card-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-200);
+}
+
+.profile-link {
+    display: block;
+    padding: var(--space-150);
+    background-color: var(--color-grey-700);
+    border-radius: var(--space-100);
+    text-decoration: none;
+    color : var(--color-white);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
     
 /*Footer*/
     .attribution { 
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 11px; 
         text-align: center; 
+        width: 100%;
     }
 
     .attribution a { 
