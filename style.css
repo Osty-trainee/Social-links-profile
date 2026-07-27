@@ -11,7 +11,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 600;
-    src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+    src: url('./assets/fonts/Inter-SemiBold.ttf') format('truetype'); /* Підключаємо SemiBold для ваги 600 */
     font-display: swap;
 }
 
@@ -19,7 +19,7 @@
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    src: url('./assets/fonts/Inter-Black.ttf') format('truetype');
+    src: url('./assets/fonts/Inter-Bold.ttf') format('truetype'); /* Підключаємо Bold для ваги 700 */
     font-display: swap;
 }
 
@@ -54,9 +54,17 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--color-grey-900);
+    color: var(--color-white);
+    padding: var(--space-300);
 }
     
-    
+.card{
+    background-color: var(--color-grey-800);
+    padding: var(--space-400);
+    width: clamp(327px, 100%, 384px);
+    border-radius: var(--space-150);
+    text-align: center;
+}    
     
 /*Footer*/
     .attribution { 
